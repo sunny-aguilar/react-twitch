@@ -1,13 +1,16 @@
 ## Twitch Clone
+
 This app is a Twitch clone using React. React router is used for navigation and authentication is<br />
 implemented using Google OAuth2.<br />
+
 ### App Challenges
+
 - need to be able to navigate around to separate pages in the app
 - need to allow a user to login/logout
 - need to handle forms in Redux
 - need to master CRUD (Create Read Update Destroy) operations in React/Redux
 - need good error handling<br /><br />
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
