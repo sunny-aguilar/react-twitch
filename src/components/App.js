@@ -11,7 +11,10 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        
+        <div>
+          <Route path="/" exact component={StreamList} />
+          <Route path="/" exact component={StreamList} />
+        </div>
       </BrowserRouter>
     </div>
   );
