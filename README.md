@@ -1,4 +1,5 @@
 ## Twitch Clone
+This app is a Twitch clone using React.<br />
 App Challenges<br />
 - need to be able to navigate around to separate pages in the app
 - need to allow a user to login/logout
