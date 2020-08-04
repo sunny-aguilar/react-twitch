@@ -26,3 +26,4 @@ yarn-error.log*
 build
 coverage
 package-lock.json
+.prettierrc.json
