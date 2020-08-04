@@ -7,9 +7,6 @@ import StreamList from "./streams/StreamList";
 import StreamShow from "./streams/StreamShow";
 import Header from "./Header";
 
-// OAuth: client ID
-// 1091101937969-m56756csts0qce8261nt2o3ia832srgp.apps.googleusercontent.com
-
 const App = () => {
   return (
     <div className="ui container">
