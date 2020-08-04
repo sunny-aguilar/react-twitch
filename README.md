@@ -1,5 +1,6 @@
 ## Twitch Clone
-This app is a Twitch clone using React.<br />
+This app is a Twitch clone using React. React router is used for navigation and authentication is<br />
+implemented using OAuth.<br />
 ### App Challenges
 - need to be able to navigate around to separate pages in the app
 - need to allow a user to login/logout
