@@ -1,8 +1,8 @@
 ## Twitch Clone
 App Challenges<br />
-- Need to be able to navigate around to separate pages in the app
-- Need to allow a user to login/logout
-- Need to handle forms in Redux
+- need to be able to navigate around to separate pages in the app
+- need to allow a user to login/logout
+- need to handle forms in Redux
 - need to master CRUD (Create Read Update Destroy) operations in React/Redux
 - need good error handling<br /><br />
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
