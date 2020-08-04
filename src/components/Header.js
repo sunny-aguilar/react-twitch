@@ -8,6 +8,7 @@ const Header = () => {
       <Link to="/" className="item">Streamer</Link>
       <div className="right menu">
         <Link to="/" className="item">All Streams</Link>
+        <GoogleAuth />
       </div>
     </div>
   );
