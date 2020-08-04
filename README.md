@@ -1,6 +1,6 @@
 ## Twitch Clone
 This app is a Twitch clone using React.<br /><br />
-###App Challenges
+### App Challenges
 - need to be able to navigate around to separate pages in the app
 - need to allow a user to login/logout
 - need to handle forms in Redux
