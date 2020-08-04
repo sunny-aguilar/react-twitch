@@ -4,6 +4,7 @@ App Challenges<br />
 - Need to allow a user to login/logout
 - Need to handle forms in Redux
 - need to master CRUD (Create Read Update Destroy) operations in React/Redux
+- need good error handling
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
