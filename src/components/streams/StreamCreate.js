@@ -7,9 +7,7 @@ class StreamCreate extends React.Component {
     if (touched && error) {
       return (
         <div className="ui error message">
-          <div className="header">
-            
-          </div>
+          <div className="header">{error}</div>
         </div>
       );
     }
