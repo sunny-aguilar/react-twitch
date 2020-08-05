@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 class StreamCreate extends React.Component {
   renderInput() {
-
+    return <div>Im an input</div>
   }
 
   render() {
