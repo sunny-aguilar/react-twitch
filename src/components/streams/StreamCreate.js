@@ -43,5 +43,6 @@ const validate = (formValues) => {
 
 export default reduxForm({
   // form name (purpose of form)
-  form: "streamCreate"
+  form: "streamCreate",
+  validate: validate
 })(StreamCreate);
