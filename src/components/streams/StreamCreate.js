@@ -15,7 +15,7 @@ class StreamCreate extends React.Component {
   render() {
     return (
       <form>
-        <Field name="title" component={this.renderInput} />
+        <Field name="title" component={this.renderInput} label="Enter Title" />
         <Field name="description" component={this.renderInput} />
       </form>
     );
