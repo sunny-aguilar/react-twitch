@@ -34,7 +34,8 @@ const validate = (formValues) => {
     // user did not enter a title
     errors.title = "You must enter a title";
   }
-  else {
+
+  if (!formValues.description) {
     // user entered a title
     errors.description = "You must enter a description";
   }
