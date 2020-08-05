@@ -3,10 +3,10 @@ import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
 
 class StreamCreate extends React.Component {
-  renderInput({ input }) {
+  renderInput({ input, label }) {
     return (
       <div className="field">
-        <label></label>
+        <label>{label}</label>
         <input {...input} />
       </div>
     );
