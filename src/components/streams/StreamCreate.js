@@ -37,6 +37,8 @@ const validate = (formValues) => {
     // user entered a title
     errors.description = "You must enter a description";
   }
+
+  return errors;
 };
 
 export default reduxForm({
