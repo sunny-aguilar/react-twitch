@@ -1,9 +1,14 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
+import { connect } from "react-redux";
 
 class StreamCreate extends React.Component {
   render() {
-    return <div>Stream Create</div>;
+    return (
+      <form>
+        <Field />
+      </form>
+    );
   }
 }
 
