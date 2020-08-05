@@ -4,8 +4,8 @@ import { connect } from "react-redux";
 
 class StreamCreate extends React.Component {
   renderInput(formProps) {
-    return
-      (<input
+    return (
+      <input
         onChange={formProps.input.onChange}
         value={formProps.input.value}
       />
