@@ -6,7 +6,8 @@ class StreamCreate extends React.Component {
   render() {
     return (
       <form>
-        <Field />
+        <Field name="title" />
+        <Field name="description" />
       </form>
     );
   }
