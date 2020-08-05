@@ -28,11 +28,14 @@ class StreamCreate extends React.Component {
 }
 
 const validate = (formValues) => {
+  const errors = {};
   if (!formValues.title) {
     // user did not enter a title
+    errors.title = "You must enter a title";
   }
   else {
     // user entered a title
+    errors.description = "You must enter a description";
   }
 };
 
