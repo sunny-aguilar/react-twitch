@@ -4,7 +4,11 @@ import { connect } from "react-redux";
 
 class StreamCreate extends React.Component {
   renderInput({ input }) {
-    return <input {...input} />;
+    return (
+      <div className="field">
+        <input {...input} />
+      </div>
+    );
   }
 
   render() {
