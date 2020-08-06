@@ -39,3 +39,9 @@ export const fetchStream = (id) => async dispatch => {
 
   dispatch({ type: FETCH_STREAM, payload: response.data });
 };
+
+export const deleteStream = () => async dispatch => {
+  const response = await streams.delete("/streams");
+
+  dispatch({ type: DELETE_STREAM, payload: response.data });
+};
