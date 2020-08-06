@@ -63,7 +63,6 @@ const validate = (formValues) => {
 };
 
 const formWrapped = reduxForm({
-  
   form: "streamCreate",     // form name (purpose of form)
   validate,
 })(StreamCreate);
