@@ -6,7 +6,7 @@ import {
   FETCH_STREAMS,
   FETCH_STREAM,
   DELETE_STREAM,
-  EDIT_STREAM
+  EDIT_STREAM,
 } from "./types";
 
 export const signIn = (userId) => {
