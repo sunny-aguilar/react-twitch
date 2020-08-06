@@ -13,3 +13,9 @@ export const signOut = () => {
     type: SIGN_OUT,
   };
 };
+
+export const createStream = (formValues) => {
+  return (dispatch) => {
+
+  };
+};
