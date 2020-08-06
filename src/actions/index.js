@@ -29,5 +29,5 @@ export const createStream = (formValues) => async (dispatch) => {
 };
 
 export const fetchStreams = () => async dispatch => {
-  
+  const reponse = await streams.get("/streams");
 };
