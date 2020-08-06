@@ -34,7 +34,7 @@ export const fetchStreams = () => async dispatch => {
   dispatch({ type: FETCH_STREAMS, payload: response.data });
 };
 
-export const fetchStream = (id) => {
+export const fetchStream = (id) => async dispatch => {
   const response = await streams.get(`/stream${id}`);
 
   dispatch({ type: FETCH_STREAM, payload: response.data });
