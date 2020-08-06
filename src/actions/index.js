@@ -14,8 +14,6 @@ export const signOut = () => {
   };
 };
 
-export const createStream = (formValues) => {
-  return (dispatch) => {
+export const createStream = (formValues) => (dispatch) => {
 
-  };
 };
