@@ -6,6 +6,10 @@ class StreamList extends React.Component {
   componentDidMount() {
     this.props.fetchStreams();
   }
+
+  render() {
+    
+  }
 }
 
 export default connect(null, { fetchStreams })(StreamList);
