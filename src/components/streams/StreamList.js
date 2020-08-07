@@ -22,7 +22,7 @@ class StreamList extends React.Component {
           </div>
         );
       });
-    }
+    } // my additional edit
   }
 
   render() {
