@@ -7,8 +7,11 @@ class StreamList extends React.Component {
     this.props.fetchStreams();
   }
 
+  renderList() {
+    
+  }
+
   render() {
-    console.log(this.props.streams);
     return <div>StreamList</div>;
   }
 }
