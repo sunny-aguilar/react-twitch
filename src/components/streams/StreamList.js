@@ -10,8 +10,8 @@ class StreamList extends React.Component {
   renderList() {
     console.log('INFO: ');
     console.log(this.props.streams);
-    if (this.props.streams){
-      return this.props.streams.map((stream) => {
+    if (this.props.streams[0]){
+      return this.props.streams[0].map((stream) => {
         return (
           <div className="item" key={stream.id}>
             <i className="large middle aligned icon camera" />
@@ -34,6 +34,7 @@ class StreamList extends React.Component {
     );
   }
 }
+// end of class
 
 const mapStateToProps = (state) => {
   return { streams: Object.values(state.streams) };
