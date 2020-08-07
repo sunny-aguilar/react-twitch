@@ -12,9 +12,9 @@ export default (state = {}, action) => {
       return { ...state, [action.payload.id]: action.payload };
     case "CREATE_STREAM":
       return { ...state, [action.payload.id]:action.payload };
-    case "FETCH_STREAMS":
-      return { ...state };
     case "EDIT_STREAM":
+      return { ...state, [action.payload.id]: action.payload };
+    case "FETCH_STREAMS":
 
     default:
       return state;
