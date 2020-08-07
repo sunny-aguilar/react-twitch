@@ -37,6 +37,8 @@ class StreamList extends React.Component {
 // end of class
 
 const mapStateToProps = (state) => {
+  console.log('OBJECT');
+  console.log(Object.values(state.streams));
   return { streams: Object.values(state.streams) };
 };
 
