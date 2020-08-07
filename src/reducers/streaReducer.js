@@ -8,6 +8,10 @@ import {
 
 export default (state = {}, action) => {
   switch(action.type) {
+    case "FETCH_STREAM":
+    case "FETCH_STREAM":
+    case "EDIT_STREAM":
+
     default:
       return state;
   }
