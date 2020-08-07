@@ -9,7 +9,9 @@ class StreamList extends React.Component {
 
   renderList() {
     return this.props.streams.map(stream => {
-      
+      return (
+        
+      );
     });
   }
 
