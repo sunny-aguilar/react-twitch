@@ -41,7 +41,7 @@ const mapStateToProps = (state) => {
   // console.log(Object.values(state.streams));
   return {
     streams: Object.values(state.streams),
-    
+    currentUserId: state.auth.userId
   };
 };
 
