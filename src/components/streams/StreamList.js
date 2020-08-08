@@ -10,7 +10,9 @@ class StreamList extends React.Component {
   renderAdmin(stream) {
     if (stream.userId === this.props.currentUserId) {
       return (
-        
+        <div className="right floated content">
+          
+        </div>
       );
     }
   }
