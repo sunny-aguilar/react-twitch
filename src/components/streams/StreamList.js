@@ -9,7 +9,7 @@ class StreamList extends React.Component {
 
   renderAdmin(stream) {
     if (stream.userId === this.props.currentUserId) {
-      return 
+      return <div>EDIT/DELETE</div>;
     }
   }
 
