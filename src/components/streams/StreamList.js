@@ -40,7 +40,8 @@ const mapStateToProps = (state) => {
   // console.log('OBJECT');
   // console.log(Object.values(state.streams));
   return {
-    streams: Object.values(state.streams)
+    streams: Object.values(state.streams),
+    
   };
 };
 
