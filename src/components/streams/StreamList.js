@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import { fetchStreams } from "../../actions";
 
 class StreamList extends React.Component {
@@ -11,21 +12,19 @@ class StreamList extends React.Component {
     if (stream.userId === this.props.currentUserId) {
       return (
         <div className="right floated content">
-          <button className="ui button primary">
+          <Link to={`/streams/edit/${stream.id}`} className="ui button primary">
             Edit
-          </button>
-          <button className="ui button negative">
-            Delete
-          </button>
+          </Link>
+          <button className="ui button negative">Delete</button>
         </div>
       );
     }
   }
 
   renderList() {
-    console.log('INFO: ');
-    console.log(this.props.streams);
-    if (this.props.streams[0]){ // my additional edit
+    // console.log(this.props.streams);
+    if (this.props.streams[0]) {
+      // my additional edit
       return this.props.streams[0].map((stream) => {
         return (
           <div className="item" key={stream.id}>
@@ -41,11 +40,24 @@ class StreamList extends React.Component {
     } // my additional edit
   }
 
+  renderCreate() {
+    if (this.props.isSignedIn) {
+      return (
+        <div style={{ textAlign: "right" }}>
+          <Link to="/streams/new" className="ui button primary">
+            Create Stream
+          </Link>
+        </div>
+      );
+    }
+  }
+
   render() {
     return (
       <div>
         <h2>Streams</h2>
         <div className="ui celled list">{this.renderList()}</div>
+        {this.renderCreate()}
       </div>
     );
   }
@@ -53,11 +65,11 @@ class StreamList extends React.Component {
 // end of class
 
 const mapStateToProps = (state) => {
-  // console.log('OBJECT');
   // console.log(Object.values(state.streams));
   return {
     streams: Object.values(state.streams),
-    currentUserId: state.auth.userId
+    currentUserId: state.auth.userId,
+    isSignedIn: state.auth.isSignedIn,
   };
 };
 
