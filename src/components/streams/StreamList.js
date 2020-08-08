@@ -7,8 +7,8 @@ class StreamList extends React.Component {
     this.props.fetchStreams();
   }
 
-  renderAdmin() {
-    
+  renderAdmin(stream) {
+
   }
 
   renderList() {
