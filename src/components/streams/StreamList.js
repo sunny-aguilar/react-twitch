@@ -10,7 +10,7 @@ class StreamList extends React.Component {
   renderList() {
     console.log('INFO: ');
     console.log(this.props.streams);
-    if (this.props.streams[0]){
+    if (this.props.streams[0]){ // my additional edit
       return this.props.streams[0].map((stream) => {
         return (
           <div className="item" key={stream.id}>
