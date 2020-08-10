@@ -9,7 +9,7 @@ class StreamShow extends React.Component {
 
   render() {
     if (!this.props.stream) {
-      return <div>Loading</div>;
+      return <div>Loading...</div>;
     }
 
     // get title and description via destructuring
