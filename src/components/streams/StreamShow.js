@@ -6,4 +6,4 @@ const StreamShow = () => {
   return <div>StreamShow</div>;
 };
 
-export default StreamShow;
+export default connect(null, { fetchStream })(StreamShow);
