@@ -12,4 +12,8 @@ class StreamShow extends React.Component {
   }
 }
 
+const mapStateToProps = (state, ownProps) => {
+  return { stream: state.streams[state.streams[ownProps.match.params.id]] };
+};
+
 export default connect(null, { fetchStream })(StreamShow);
