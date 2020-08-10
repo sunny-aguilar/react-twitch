@@ -4,11 +4,13 @@ import { fetchStream } from "../../actions";
 
 class StreamShow extends React.Component {
   componentDidMount() {
+    console.log(`ID: ${}`);
     this.props.fetchStream(this.props.match.params.id);
   }
 
   render() {
     console.log("Stream: ", this.props.stream);
+    console.log("Stream: ", this.props);
     if (!this.props.stream) {
       return <div>Loading...</div>;
     }
