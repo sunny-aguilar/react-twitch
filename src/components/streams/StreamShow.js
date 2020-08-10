@@ -10,7 +10,7 @@ class StreamShow extends React.Component {
 
   render() {
     console.log("Stream: ", this.props.stream);
-    console.log("Stream: ", this.props);
+    console.log("Props: ", this.props);
     if (!this.props.stream) {
       return <div>Loading...</div>;
     }
