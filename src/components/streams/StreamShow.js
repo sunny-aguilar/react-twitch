@@ -17,6 +17,7 @@ class StreamShow extends React.Component {
 
     // get title and description via destructuring
     const { title, description } = this.props.stream;
+    console.log(`Title ${title} and Desc: ${description}`);
 
     return (
       <div>
